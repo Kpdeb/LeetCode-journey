@@ -34,3 +34,12 @@ int singleNonDuplicate(int* nums, int numsSize) {
     }
     return nums[low];
 }
+
+
+output :
+nums =
+[1,1,2,3,3,4,4,8,8]
+Output
+2
+Expected
+2
