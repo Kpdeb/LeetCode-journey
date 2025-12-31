@@ -48,4 +48,13 @@ int a= (numsSize+1)*(numsSize)/2;
 return a-sum;
 }
 
+output :
+nums =
+[3,0,1]
+Output
+2
+Expected
+2
+
+
 
