@@ -33,3 +33,13 @@ int character =nums[0];
      }}
      return character ;
 }
+
+
+output:
+
+nums =
+[3,2,3]
+Output
+3
+Expected
+3
