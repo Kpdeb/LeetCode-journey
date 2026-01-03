@@ -21,3 +21,11 @@ ans = ans^nums[i];
 }
 return ans ;
 }
+
+output :
+nums =
+[2,2,1]
+Output
+1
+Expected
+1
