@@ -20,3 +20,12 @@ Given an m x n matrix, return all elements of the matrix in spiral order.
         result [(*returnSize)++]=matrix[top][j]; 
      } 
      top++;
+ for (int i= top ;i<=bottom && *returnSize <totalElements;i++){
+        result[(*returnSize)++]=matrix[i][right];
+     }
+     right--;
+
+     for (int j =right ;j>=left && *returnSize <totalElements ;j--){
+        result[(*returnSize)++]= matrix[bottom][j];
+     }
+     bottom--;
