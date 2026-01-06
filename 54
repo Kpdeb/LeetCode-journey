@@ -6,3 +6,11 @@ Given an m x n matrix, return all elements of the matrix in spiral order.
         *returnSize = 0;
         return NULL;
      }
+ int row = matrixSize ;
+     int cols =*matrixColSize ;
+     int totalElements =row*cols ;
+     int* result =(int*)malloc(sizeof (int)*totalElements);
+     *returnSize =0;
+     
+     int top =0 , bottom =row-1;
+     int left =0 , right = cols -1 ;
