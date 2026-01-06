@@ -29,3 +29,13 @@ Given an m x n matrix, return all elements of the matrix in spiral order.
         result[(*returnSize)++]= matrix[bottom][j];
      }
      bottom--;
+
+ for (int i=bottom ;i>=top&& *returnSize <totalElements;i--){
+        result[(*returnSize)++]=matrix[i][left] ;
+     }
+     left++;
+     }
+     return result ;
+}
+
+
