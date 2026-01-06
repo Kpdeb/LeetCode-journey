@@ -14,3 +14,9 @@ Given an m x n matrix, return all elements of the matrix in spiral order.
      
      int top =0 , bottom =row-1;
      int left =0 , right = cols -1 ;
+ while (*returnSize <totalElements){
+
+     for (int j =left ; j<=right && *returnSize <totalElements; j++){
+        result [(*returnSize)++]=matrix[top][j]; 
+     } 
+     top++;
