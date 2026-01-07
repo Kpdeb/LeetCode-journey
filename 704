@@ -20,3 +20,16 @@ int search(int* nums, int numsSize, int target) {
     }
     return -1;
 }
+
+
+
+output :
+
+nums =
+[-1,0,3,5,9,12]
+target =
+9
+Output
+4
+Expected
+4
