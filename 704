@@ -3,4 +3,7 @@ Given an array of integers nums which is sorted in ascending order, and an integ
 
 You must write an algorithm with O(log n) runtime complexity.
 
- 
+code :
+int search(int* nums, int numsSize, int target) {
+    int left =0;
+    int right = numsSize -1;
