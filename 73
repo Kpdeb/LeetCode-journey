@@ -1,2 +1,10 @@
 question :
 Given an m x n integer matrix matrix, if an element is 0, set its entire row and column to 0's.
+
+
+code :
+void setZeroes(int** matrix, int matrixSize, int* matrixColSize) {
+    int rows = matrixSize ;
+    int cols =*matrixColSize ;
+    bool firstColZero  =false ;
+    bool firstRowZero= false ;
