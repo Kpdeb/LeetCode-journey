@@ -8,3 +8,9 @@ void setZeroes(int** matrix, int matrixSize, int* matrixColSize) {
     int cols =*matrixColSize ;
     bool firstColZero  =false ;
     bool firstRowZero= false ;
+for (int j=0;j<cols;j++){
+        if (matrix[0][j]==0){
+          firstRowZero= true ;
+          break;
+        }
+    }
