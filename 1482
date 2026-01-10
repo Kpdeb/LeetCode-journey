@@ -41,3 +41,15 @@ int minDays(int* bloomDay, int bloomDaySize, int m, int k) {
                 flowers = 0;
             }
         }
+
+ if (bouquets >=m){
+            ans =mid ;
+            high =mid -1 ;
+        
+        }else {
+            low = mid +1;
+        }
+    }
+    return ans ;
+
+}
