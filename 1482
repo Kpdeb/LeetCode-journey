@@ -1,10 +1,10 @@
 question :
-Given an array of integers nums and an integer threshold, we will choose a positive integer divisor, divide all the array by it, and sum the division's result. Find the smallest divisor such that the result mentioned above is less than or equal to threshold.
+You are given an integer array bloomDay, an integer m and an integer k.
 
-Each result of the division is rounded to the nearest integer greater than or equal to that element. (For example: 7/3 = 3 and 10/2 = 5).
+You want to make m bouquets. To make a bouquet, you need to use k adjacent flowers from the garden.
 
-The test cases are generated so that there will be an answer.
+The garden consists of n flowers, the ith flower will bloom in the bloomDay[i] and then can be used in exactly one bouquet.
 
-code :
+Return the minimum number of days you need to wait to be able to make m bouquets from the garden. If it is impossible to make m bouquets return -1.
 
 
