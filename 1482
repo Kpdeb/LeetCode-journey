@@ -7,4 +7,10 @@ The garden consists of n flowers, the ith flower will bloom in the bloomDay[i] a
 
 Return the minimum number of days you need to wait to be able to make m bouquets from the garden. If it is impossible to make m bouquets return -1.
 
+code :
+int minDays(int* bloomDay, int bloomDaySize, int m, int k) {
+    if ((long long )m*k>bloomDaySize )
+    return -1;
 
+    int low = bloomDay [0];
+    int high = bloomDay[0];
