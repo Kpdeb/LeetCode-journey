@@ -21,3 +21,9 @@ public:
         }
         return d<= days ;
     }
+int shipWithinDays (vector<int>& weight ,int days ){
+        int left = *max_element(weight.begin(),weight.end ()) ;
+        int right =0;
+
+        for (int w : weight)
+        right +=w ;
