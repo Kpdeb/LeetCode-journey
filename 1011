@@ -39,3 +39,15 @@ int shipWithinDays (vector<int>& weight ,int days ){
 
     }
 };
+
+
+OUTPUT :
+
+weights =
+[1,2,3,4,5,6,7,8,9,10]
+days =
+5
+Output
+15
+Expected
+15
