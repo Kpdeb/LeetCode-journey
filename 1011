@@ -27,3 +27,11 @@ int shipWithinDays (vector<int>& weight ,int days ){
 
         for (int w : weight)
         right +=w ;
+ while (left <right ){
+            int mid = left +(right -left )/2;
+
+            if (canship (weight, days ,mid ))
+            right = mid ;
+            else 
+            left = mid +1;
+        }
