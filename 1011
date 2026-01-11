@@ -35,3 +35,7 @@ int shipWithinDays (vector<int>& weight ,int days ){
             else 
             left = mid +1;
         }
+        return left ;
+
+    }
+};
