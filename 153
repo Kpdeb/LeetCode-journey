@@ -8,3 +8,11 @@ Notice that rotating an array [a[0], a[1], a[2], ..., a[n-1]] 1 time results in 
 Given the sorted rotated array nums of unique elements, return the minimum element of this array.
 
 You must write an algorithm that runs in O(log n) time.
+
+
+code :
+int findMin(int* nums, int numsSize) {
+    int left =0;
+    int right = numsSize-1;
+    while (left <right ){
+    int mid =left +(right -left )/2;
