@@ -23,3 +23,6 @@ if (nums[mid]>nums[right]){
 
     }
     }
+  return nums[left];
+
+}
