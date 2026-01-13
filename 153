@@ -26,3 +26,14 @@ if (nums[mid]>nums[right]){
   return nums[left];
 
 }
+
+
+
+output :
+Input
+nums =
+[3,4,5,1,2]
+Output
+1
+Expected
+1
