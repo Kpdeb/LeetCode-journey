@@ -7,3 +7,9 @@ Every consecutive pair of integers have opposite signs.
 For all integers with the same sign, the order in which they were present in nums is preserved.
 The rearranged array begins with a positive integer.
 Return the modified array after rearranging the elements to satisfy the aforementioned conditions.
+
+code :
+int* rearrangeArray(int* nums, int numsSize, int* returnSize) {
+    int* ans =(int*)malloc(numsSize*sizeof(int));
+    int pos=0;
+    int neg=1;
