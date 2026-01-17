@@ -15,3 +15,8 @@ int* twoSum(int* nums, int numsSize, int target, int* returnSize) {
              result [0]=k;
              result [1]=i;
              return result ;   
+  }
+        }
+    }
+    return NULL;
+}
