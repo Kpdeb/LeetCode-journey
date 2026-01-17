@@ -8,3 +8,7 @@ You can return the answer in any order.
 CODE :
 int* twoSum(int* nums, int numsSize, int target, int* returnSize) {
     static int result [2];
+*returnSize=2;
+    for (int k=0;k<numsSize;k++){
+        for (int i=k+1;i<numsSize ;i++){
+            if (nums[k]+nums[i]==target){
