@@ -36,3 +36,6 @@ for ( i =1; i<numsSize; i++)
        }
        return j+1;
 }
+
+
+output :
