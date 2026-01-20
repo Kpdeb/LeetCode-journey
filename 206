@@ -13,3 +13,9 @@ ListNode* reverseList(ListNode* head) {
             curr->next =prev ;
  prev= curr;
             curr = nextNode ;
+
+        }
+        return prev ;
+        
+    }
+};
