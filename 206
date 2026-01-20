@@ -5,3 +5,6 @@ Given the head of a singly linked list, reverse the list, and return the reverse
 code :
 class Solution {
 public:
+ListNode* reverseList(ListNode* head) {
+        ListNode*prev =NULL;
+        ListNode*curr = head ;
