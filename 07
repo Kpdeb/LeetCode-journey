@@ -19,3 +19,13 @@ int rev=0;
       return rev ; 
     }
 };
+
+
+OUTPUT :
+Input
+x =
+123
+Output
+321
+Expected
+321
