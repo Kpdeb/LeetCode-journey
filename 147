@@ -8,3 +8,16 @@ At each iteration, insertion sort removes one element from the input data, finds
 It repeats until no input elements remain.
 The following is a graphical example of the insertion sort algorithm. The partially sorted list (black) initially contains only the first element in the list. One element (red) is removed from the input data and inserted in-place into the sorted list with each iteration.
 
+code :
+
+class Solution {
+public:
+    ListNode* insertionSortList(ListNode* head) {
+        // Dummy node for the sorted list
+        ListNode dummy(0);
+        dummy.next = nullptr;
+
+        ListNode* curr = head;
+
+        while (curr != nullptr) {
+            ListNode* nextNode = curr->next;
