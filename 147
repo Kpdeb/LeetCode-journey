@@ -26,3 +26,15 @@ public:
             while (prev->next != nullptr && prev->next->val < curr->val) {
                 prev = prev->next;
             }
+
+            // Insert curr node
+            curr->next = prev->next;
+            prev->next = curr;
+
+            // Move forward
+            curr = nextNode;
+        }
+
+        return dummy.next;
+    }
+};
