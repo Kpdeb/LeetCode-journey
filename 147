@@ -38,3 +38,8 @@ public:
         return dummy.next;
     }
 };
+
+output :
+Input
+head =
+[4,2,1,3]
