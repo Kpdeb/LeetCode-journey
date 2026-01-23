@@ -21,3 +21,8 @@ public:
 
         while (curr != nullptr) {
             ListNode* nextNode = curr->next;
+ // Find correct position in sorted list
+            ListNode* prev = &dummy;
+            while (prev->next != nullptr && prev->next->val < curr->val) {
+                prev = prev->next;
+            }
