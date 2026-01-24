@@ -8,4 +8,10 @@ class Solution(object):
         :type s: str
         :rtype: str
         """
- 
+  last ={}
+        stack=[]
+        seen = set()
+
+        for i, ch in enumerate(s):
+            last[ch]=i
+
