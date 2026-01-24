@@ -25,3 +25,12 @@ while stack and stack[-1]>ch and last[stack[-1]]>i:
             stack.append(ch)
             seen.add(ch)
         return "".join(stack)
+
+output :
+Input
+s =
+"bcabc"
+Output
+"abc"
+Expected
+"abc"
