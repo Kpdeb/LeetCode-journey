@@ -38,5 +38,12 @@ def greater(a, i, b, j):
         best = [0] * k
         start = max(0, k - len(nums2))
         end = min(k, len(nums1))
+  for i in range(start, end + 1):
+            part1 = maxSubsequence(nums1, i)
+            part2 = maxSubsequence(nums2, k - i)
+            candidate = merge(part1, part2)
+            if candidate > best:
+                best = candidate
 
+        return best
 
