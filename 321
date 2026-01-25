@@ -47,3 +47,5 @@ def greater(a, i, b, j):
 
         return best
 
+output :
+
