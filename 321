@@ -5,3 +5,16 @@ You are given two integer arrays nums1 and nums2 of lengths m and n respectively
 Create the maximum number of length k <= m + n from digits of the two numbers. The relative order of the digits from the same array must be preserved.
 
 Return an array of the k digits representing the answer.
+
+code :
+class Solution(object):
+    def maxNumber(self, nums1, nums2, k):
+        def maxSubsequence(nums, k):
+            stack = []
+            drop = len(nums) - k
+            for n in nums:
+                while stack and drop > 0 and stack[-1] < n:
+                    stack.pop()
+                    drop -= 1
+                stack.append(n)
+            return stack[:k]
