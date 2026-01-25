@@ -35,3 +35,8 @@ def greater(a, i, b, j):
                     res.append(b[j])
                     j += 1
             return res
+        best = [0] * k
+        start = max(0, k - len(nums2))
+        end = min(k, len(nums1))
+
+
