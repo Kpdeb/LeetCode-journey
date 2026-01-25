@@ -18,3 +18,8 @@ class Solution(object):
                     drop -= 1
                 stack.append(n)
             return stack[:k]
+def greater(a, i, b, j):
+            while i < len(a) and j < len(b) and a[i] == b[j]:
+                i += 1
+                j += 1
+            return j == len(b) or (i < len(a) and a[i] > b[j])
