@@ -23,3 +23,11 @@ def greater(a, i, b, j):
                 i += 1
                 j += 1
             return j == len(b) or (i < len(a) and a[i] > b[j])
+
+        def merge(a, b):
+            res = []
+            i = j = 0
+            while i < len(a) or j < len(b):
+                if greater(a, i, b, j):
+                    res.append(a[i])
+                    i += 1
