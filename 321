@@ -31,3 +31,7 @@ def greater(a, i, b, j):
                 if greater(a, i, b, j):
                     res.append(a[i])
                     i += 1
+  else:
+                    res.append(b[j])
+                    j += 1
+            return res
