@@ -13,3 +13,7 @@ public:
                 result.insert(num);
             }
         }
+
+        return vector<int>(result.begin(), result.end());
+    }
+};
