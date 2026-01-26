@@ -22,3 +22,8 @@ public:
             }
             else {
                 j++;
+}
+        }
+        return result;
+    }
+};
