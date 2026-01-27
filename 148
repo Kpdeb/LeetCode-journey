@@ -8,3 +8,10 @@ public:
         // Base case: if list is empty or has only one node
         if (!head || !head->next) {
             return head;
+ }
+
+        // 1. Split the list into two halves
+        ListNode* mid = getMid(head);
+        ListNode* left = head;
+        ListNode* right = mid->next;
+        mid->next = nullptr; // Break the link
