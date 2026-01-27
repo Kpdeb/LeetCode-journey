@@ -27,3 +27,12 @@ public:
         // Each bucket stores its min and max elements
         vector<int> minBucket(bucketCount, INT_MAX);
         vector<int> maxBucket(bucketCount, INT_MIN);
+for (int x : nums) {
+            int idx = (x - minVal) / bucketSize;
+            minBucket[idx] = min(minBucket[idx], x);
+            maxBucket[idx] = max(maxBucket[idx], x);
+        }
+
+        // Scan buckets to find the max gap
+        int maxGap = 0;
+        int prevMax = minVal;
