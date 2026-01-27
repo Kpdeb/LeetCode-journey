@@ -2,3 +2,21 @@ question :
 Given an integer array nums, return the maximum difference between two successive elements in its sorted form. If the array contains less than two elements, return 0.
 
 You must write an algorithm that runs in linear time and uses linear extra space.
+
+code :
+#include <vector>
+#include <algorithm>
+#include <cmath>
+
+using namespace std;
+
+class Solution {
+public:
+    int maximumGap(vector<int>& nums) {
+        int n = nums.size();
+        if (n < 2) return 0;
+
+        int minVal = *min_element(nums.begin(), nums.end());
+        int maxVal = *max_element(nums.begin(), nums.end());
+
+        if (minVal == maxVal) return 0;
