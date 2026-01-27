@@ -23,3 +23,7 @@ public:
         return merge(left, right);
     }
 
+private:
+    ListNode* getMid(ListNode* head) {
+        ListNode* slow = head;
+        ListNode* fast = head->next; // Start fast one step ahead
