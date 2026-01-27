@@ -36,3 +36,15 @@ for (int x : nums) {
         // Scan buckets to find the max gap
         int maxGap = 0;
         int prevMax = minVal;
+ for (int i = 0; i < bucketCount; i++) {
+            // Skip empty buckets
+            if (minBucket[i] == INT_MAX) continue;
+
+            // Gap is between current bucket's min and previous bucket's max
+            maxGap = max(maxGap, minBucket[i] - prevMax);
+            prevMax = maxBucket[i];
+        }
+
+        return maxGap;
+    }
+};
