@@ -48,3 +48,15 @@ for (int x : nums) {
         return maxGap;
     }
 };
+
+
+output:
+
+Input
+nums =
+[3,6,9,1]
+Output
+3
+Expected
+3
+
