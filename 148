@@ -31,3 +31,9 @@ while (fast && fast->next) {
             slow = slow->next;
             fast = fast->next->next;
         }
+ return slow;
+    }
+
+    ListNode* merge(ListNode* list1, ListNode* list2) {
+        ListNode dummy(0); // Use a stack-allocated dummy for O(1) extra space here
+        ListNode* tail = &dummy;
