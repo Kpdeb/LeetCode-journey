@@ -20,3 +20,10 @@ public:
         int maxVal = *max_element(nums.begin(), nums.end());
 
         if (minVal == maxVal) return 0;
+// Calculate bucket size and count
+        int bucketSize = max(1, (maxVal - minVal) / (n - 1));
+        int bucketCount = (maxVal - minVal) / bucketSize + 1;
+
+        // Each bucket stores its min and max elements
+        vector<int> minBucket(bucketCount, INT_MAX);
+        vector<int> maxBucket(bucketCount, INT_MIN);
