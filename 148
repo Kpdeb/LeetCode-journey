@@ -15,3 +15,11 @@ public:
         ListNode* left = head;
         ListNode* right = mid->next;
         mid->next = nullptr; // Break the link
+  // 2. Recursive sort
+        left = sortList(left);
+        right = sortList(right);
+
+        // 3. Merge sorted halves
+        return merge(left, right);
+    }
+
