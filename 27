@@ -18,3 +18,16 @@ int removeElement(int* nums, int numsSize, int val) {
     }
     return k;
 }
+
+
+
+OUTPUT:
+
+nums =
+[3,2,2,3]
+val =
+3
+Output
+[2,2]
+Expected
+[2,2]
