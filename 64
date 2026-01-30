@@ -4,3 +4,13 @@ Given a m x n grid filled with non-negative numbers, find a path from top left t
 Note: You can only move either down or right at any point in time.
 
  
+code :
+class Solution:
+    def minPathSum(self, grid):
+        m, n = len(grid), len(grid[0])
+
+        for i in range(m):
+            for j in range(n):
+                if i == 0 and j == 0:
+                    continue
+                elif i == 0:
