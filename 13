@@ -48,3 +48,13 @@ int total = 0;
     }
 };
 
+
+output :
+Input
+s =
+"III"
+Output
+3
+Expected
+3
+
