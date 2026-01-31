@@ -21,5 +21,13 @@ public:
     }
 };
 
+output:
+Input
+strs =
+["flower","flow","flight"]
+Output
+"fl"
+Expected
+"fl"
 
 
