@@ -18,3 +18,7 @@ public:
                 st.push(c);
             } else {
                 if (st.empty()) return false;
+ char top = st.top();
+                st.pop();
+
+                if ((c == ')' && top != '(') ||
