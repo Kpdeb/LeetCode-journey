@@ -29,6 +29,13 @@ public:
             }
         }
 
+
+        return st.empty();
+    }
+};
+
+output :
+
 output :
 s =
 "()"
@@ -36,9 +43,4 @@ Output
 true
 Expected
 true
-
-
-        return st.empty();
-    }
-};
 
