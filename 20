@@ -29,6 +29,15 @@ public:
             }
         }
 
+output :
+s =
+"()"
+Output
+true
+Expected
+true
+
+
         return st.empty();
     }
 };
