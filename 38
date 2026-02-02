@@ -25,3 +25,10 @@ for (int j = 1; j < s.size(); j++) {
                     count = 1;
                 }
             }
+ // add last group
+            next += to_string(count) + s.back();
+            s = next;
+        }
+        return s;
+    }
+};
