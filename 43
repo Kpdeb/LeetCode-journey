@@ -25,3 +25,13 @@ public:
         return ans.empty() ? "0" : ans;
     }
 };
+
+output :
+num1 =
+"2"
+num2 =
+"3"
+Output
+"6"
+Expected
+"6"
