@@ -20,3 +20,8 @@ public:
  string ans = "";
         for (int num : result) {
             if (!(ans.empty() && num == 0))
+   }
+
+        return ans.empty() ? "0" : ans;
+    }
+};
