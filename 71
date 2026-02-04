@@ -41,3 +41,10 @@ public:
                     stk.push_back(temp);
                 }
                 temp.clear();
+ } else {
+                temp += path[i];
+            }
+        }
+        
+        string result = "/";
+        for (int i = 0; i < stk.size(); i++) {
