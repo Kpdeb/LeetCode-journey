@@ -51,6 +51,16 @@ public:
     result += stk[i];
             if (i < stk.size() - 1) result += "/";
         }
+
+
+
+output :
+path =
+"/home/"
+Output
+"/home"
+Expected
+"/home"
         
         return result;
     }
