@@ -25,6 +25,13 @@ The path must not have any single or double periods ('.' and '..') used to denot
 Return the simplified canonical path.
 
  code :
-
+lass Solution {
+public:
+    string simplifyPath(string path) {
+        vector<string> stk;
+        string temp;
+        
+        for (int i = 0; i <= path.size(); i++) {
+            if (i == path.size() || path[i] == '/') {
  
 
