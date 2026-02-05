@@ -24,3 +24,13 @@ public:
  return len;
     }
 };
+
+
+output :
+Input
+s =
+"Hello World"
+Output
+5
+Expected
+5
