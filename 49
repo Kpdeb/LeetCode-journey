@@ -19,3 +19,13 @@ for (string s : strs) {
         return result;
     }
 };
+
+
+output :
+Input
+strs =
+["eat","tea","tan","ate","nat","bat"]
+Output
+[["bat"],["tan","nat"],["eat","tea","ate"]]
+Expected
+[["bat"],["nat","tan"],["ate","eat","tea"]]
