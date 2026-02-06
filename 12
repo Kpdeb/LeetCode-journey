@@ -32,3 +32,6 @@ public:
                 result += symbols[i];
             }
         }
+ return result;
+    }
+};
