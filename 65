@@ -30,6 +30,11 @@ public:
             char c = s[i];
 
             if (isdigit(c)) {
+   // Sign must be at start or right after e/E
+                if (i > 0 && s[i - 1] != 'e' && s[i - 1] != 'E')
+                    return false;
+            }
+            else if (c == '.') {
                 seenDigit = true;
             }
             else if (c == '+' || c == '-') {
