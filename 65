@@ -35,6 +35,12 @@ public:
                     return false;
             }
             else if (c == '.') {
+ // Dot not allowed after e or multiple dots
+                if (seenDot || seenE)
+                    return false;
+                seenDot = true;
+            }
+            else if (c == 'e' || c == 'E') {
                 seenDigit = true;
             }
             else if (c == '+' || c == '-') {
