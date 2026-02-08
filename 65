@@ -57,3 +57,13 @@ public:
         return seenDigit;
     }
 };
+
+
+output :
+Input
+s =
+"0"
+Output
+true
+Expected
+true
