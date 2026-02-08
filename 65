@@ -44,3 +44,10 @@ public:
                 seenDigit = true;
             }
             else if (c == '+' || c == '-') {
+// e must appear once and after a digit
+                if (seenE || !seenDigit)
+                    return false;
+                seenE = true;
+                seenDigit = false; // reset for digits after e
+            }
+            else {
