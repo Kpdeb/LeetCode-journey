@@ -51,3 +51,9 @@ public:
                 seenDigit = false; // reset for digits after e
             }
             else {
+  return false;
+            }
+        }
+        return seenDigit;
+    }
+};
