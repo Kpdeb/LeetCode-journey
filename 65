@@ -17,3 +17,12 @@ A dot '.' followed by digits.
 An exponent is defined with an exponent notation 'e' or 'E' followed by an integer number.
 
 The digits are defined as one or more digits.
+
+
+code:
+class Solution {
+public:
+    bool isNumber(string s) {
+        bool seenDigit = false;
+        bool seenDot = false;
+        bool seenE = false;
