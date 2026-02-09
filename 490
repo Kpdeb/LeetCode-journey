@@ -12,3 +12,7 @@ for (string s : strs) {
             sort(key.begin(), key.end());  // sort characters
             mp[key].push_back(s);
         }
+vector<vector<string>> result;
+        for (auto it : mp) {
+            result.push_back(it.second);
+        }
