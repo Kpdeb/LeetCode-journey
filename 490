@@ -19,3 +19,13 @@ vector<vector<string>> result;
   return result;
     }
 };
+
+
+
+output :
+strs =
+["eat","tea","tan","ate","nat","bat"]
+Output
+[["bat"],["tan","nat"],["eat","tea","ate"]]
+Expected
+[["bat"],["nat","tan"],["ate","eat","tea"]]
