@@ -21,3 +21,7 @@ public:
         return dfs(root, 0);
     }
 };
+
+Output:
+
+12 + 13 = 25
