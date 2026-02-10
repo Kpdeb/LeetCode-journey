@@ -14,3 +14,10 @@ public:
         // leaf node
         if (!root->left && !root->right)
             return current;
+ return dfs(root->left, current) + dfs(root->right, current);
+    }
+
+    int sumNumbers(TreeNode* root) {
+        return dfs(root, 0);
+    }
+};
