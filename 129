@@ -2,3 +2,10 @@ question :
 You’re given a binary tree where each node contains a digit (0–9).
 Each root-to-leaf path forms a number.
  Return the sum of all those numbers.
+
+
+code :
+class Solution {
+public:
+    int dfs(TreeNode* root, int current) {
+        if (!root) return 0;
