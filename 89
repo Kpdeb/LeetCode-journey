@@ -7,3 +7,8 @@ Every adjacent number differs by only 1 bit
 
 Sequence is cyclic (last and first differ by 1 bit)
 
+code:
+class Solution {
+public:
+    vector<int> grayCode(int n) {
+        vector<int> ans;
