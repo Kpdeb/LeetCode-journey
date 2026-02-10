@@ -1,1 +1,8 @@
+question :
+Given an integer n, return a sequence of 2ⁿ Gray codes such that:
 
+First number is 0
+
+Every adjacent number differs by only 1 bit
+
+Sequence is cyclic (last and first differ by 1 bit)
