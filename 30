@@ -18,3 +18,10 @@ class Solution {
 public:
     vector<int> findSubstring(string s, vector<string>& words) {
         vector<int> result;
+ 
+        if(s.empty() || words.empty()) return result;
+        
+        int wordLen = words[0].length();
+        int wordCount = words.size();
+        int totalLen = wordLen * wordCount;
+        
