@@ -42,3 +42,12 @@ public:
                 if(wordMap.count(word)) {
                     tempMap[word]++;
                     count++;
+                    
+                    // If word frequency exceeds required
+                    while(tempMap[word] > wordMap[word]) {
+                        string leftWord = s.substr(left, wordLen);
+                        tempMap[leftWord]--;
+                        left += wordLen;
+                        count--;
+                    }
+
