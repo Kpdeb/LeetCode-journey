@@ -36,3 +36,9 @@ public:
             int left = i;
             int count = 0;
             unordered_map<string, int> tempMap;
+ for(int j = i; j + wordLen <= s.length(); j += wordLen) {
+                string word = s.substr(j, wordLen);
+                
+                if(wordMap.count(word)) {
+                    tempMap[word]++;
+                    count++;
