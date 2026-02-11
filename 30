@@ -25,3 +25,14 @@ public:
         int wordCount = words.size();
         int totalLen = wordLen * wordCount;
         
+        unordered_map<string, int> wordMap;
+        
+        // Store frequency of words
+        for(string word : words)
+            wordMap[word]++;
+        
+        // Try each possible offset
+        for(int i = 0; i < wordLen; i++) {
+            int left = i;
+            int count = 0;
+            unordered_map<string, int> tempMap;
