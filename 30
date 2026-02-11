@@ -50,4 +50,18 @@ public:
                         left += wordLen;
                         count--;
                     }
-
+ 
+                    if(count == wordCount)
+                        result.push_back(left);
+                }
+                else {
+                    tempMap.clear();
+                    count = 0;
+                    left = j + wordLen;
+                }
+            }
+        }
+        
+        return result;
+    }
+};
