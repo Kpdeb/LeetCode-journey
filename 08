@@ -10,3 +10,11 @@ Rounding: If the integer is out of the 32-bit signed integer range [-231, 231 - 
 Return the integer as the final result.
 
  
+code :
+class Solution {
+public:
+    int myAtoi(string s) {
+        int i = 0;
+        int n = s.length();
+        long result = 0;
+        int sign = 1;
