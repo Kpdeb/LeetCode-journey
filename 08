@@ -18,3 +18,14 @@ public:
         int n = s.length();
         long result = 0;
         int sign = 1;
+ // Step 1: Skip leading spaces
+        while (i < n && s[i] == ' ') {
+            i++;
+        }
+
+        // Step 2: Check sign
+        if (i < n && (s[i] == '+' || s[i] == '-')) {
+            if (s[i] == '-')
+                sign = -1;
+            i++;
+        }
