@@ -25,3 +25,12 @@ public:
     }
 };
 
+
+output :
+Input
+nums =
+[1,2,0]
+Output
+3
+Expected
+3
