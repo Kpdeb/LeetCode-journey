@@ -38,3 +38,15 @@ if (target == 0) {
         }
     }
 
+    vector<vector<int>> combinationSum2(vector<int>& candidates, int target) {
+        
+        sort(candidates.begin(), candidates.end());
+
+        vector<vector<int>> result;
+        vector<int> path;
+
+        backtrack(candidates, target, 0, path, result);
+        return result;
+    }
+};
+
