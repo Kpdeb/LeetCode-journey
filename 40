@@ -23,4 +23,18 @@ if (target == 0) {
             
             // Skip duplicates
             if (i > start && candidates[i] == candidates[i - 1])
-        
+          continue;
+
+            // If current number exceeds target, stop (because sorted)
+            if (candidates[i] > target)
+                break;
+
+            path.push_back(candidates[i]);
+
+            // Move to i+1 (no reuse allowed)
+            backtrack(candidates, target - candidates[i], i + 1, path, result);
+
+            path.pop_back(); // Backtrack
+        }
+    }
+
