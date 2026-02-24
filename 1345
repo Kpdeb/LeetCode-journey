@@ -52,4 +52,20 @@ public:
                     visited[idx - 1] = true;
                     q.push(idx - 1);
                 }
+ // same value jumps
+                for(int next : mp[arr[idx]]) {
+                    if(!visited[next]) {
+                        visited[next] = true;
+                        q.push(next);
+                    }
+                }
 
+                mp[arr[idx]].clear(); // 🔥 Important optimization
+            }
+
+            steps++;
+        }
+
+        return -1;
+    }
+};
