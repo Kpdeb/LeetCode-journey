@@ -1,22 +1,4 @@
-Question 
-Given an integer array nums where the elements are sorted in ascending order, convert it to a height-balanced binary search tree.
 
-
-code :
-struct TreeNode {
-    int val;
-    struct TreeNode *left;
-    struct TreeNode *right;
-};
-
-struct TreeNode* build(int* nums, int low, int high) {
-    if (low > high)
-        return NULL;
-
-    int mid = (low + high) / 2;
-
-    struct TreeNode* root = (struct TreeNode*)malloc(sizeof(struct TreeNode));
-    root->val = nums[mid];
 
     root->left = build(nums, low, mid - 1);
     root->right = build(nums, mid + 1, high);
